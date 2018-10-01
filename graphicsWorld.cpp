@@ -78,4 +78,4 @@ void graphicsWorld::run(){
 	
 	
 #endif // end of block to test array of pointer and polymorphism
-}
+};

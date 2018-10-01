@@ -19,7 +19,7 @@ class Point {
 	int getX(void);
 	int getY(void);
 	int counter(void);
-	static int distance(const Point& ax); //always pass as a reference so you don;t have to copy
-	int distance(Point& a, Point& b);
+	 int distance(const Point& ax); //always pass as a reference so you don;t have to copy
+	static int distance(Point& a, Point& b);
 	
-}
+};

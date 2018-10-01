@@ -28,21 +28,21 @@ Point& Point::operator=(const Point& rhs) {
 }
 
 
-void display() {
+void Point::display() {
 	cout << "X-coordinate: " << x << endl;
 	cout << "Y-coordinate: " << y << endl;
 }
 
-void setX (int x) this->x = x;
-void setY (int y) this->y = y;
-int getX(void) return this->x;
-int getY(void) return this->y;
-int counter(void) return (this->id-1001);
-int distance(Point& a, Point& b){
+void Point::setx (int x) this->x = x;
+void Point::sety (int y) this->y = y;
+int Point::getX(void) return this->x;
+int Point::getY(void) return this->y;
+int Point::counter(void) return (this->id-1001);
+static int Point::distance(Point& a, Point& b){
 	int d =((a.x-b.x)*(a.x-b.x))+((a.y-b.y)*(a.y-b.y));
 	return sqrt(d);
 }
-static int distance(Point& ax) {
+int Point::distance(Point& ax) {
 	int d =((ax.x-x)*(ax.x-x))+((ax.y-y)*(ax.y-y));
 	return sqrt(d);
 }

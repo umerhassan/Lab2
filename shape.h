@@ -14,4 +14,4 @@ class Shape {
 	double distance (Shape& other);
 	static double distance (Shape& the_shape, Shape& other);
 	void move (double dx, double dy);
-}
+};
